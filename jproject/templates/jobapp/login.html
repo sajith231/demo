@@ -1,0 +1,28 @@
+{% extends 'jobapp/base.html' %}
+{% load static %}
+
+  {% block content %}
+
+  
+  <section class="about_section layout_padding" style="background-color: white;">
+    <div class="container" >
+      <div class="row">
+        <div class="container mt-5">
+          <h2 >Login</h2>
+          <form action="" method="post" >
+              {% csrf_token %}
+              <div class="mb-3">
+                  {{ form }}
+              </div>
+      
+            
+            <button type="submit" class="btn btn-primary">Login</button>
+            
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+
+  {% endblock %}

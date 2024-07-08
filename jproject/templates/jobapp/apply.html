@@ -1,0 +1,12 @@
+{% extends 'jobapp/base.html' %}
+{% load static %}
+
+  {% block content %}<h1 style="color: white;" >Complete Your Profile</h1>
+  <form method="post" enctype="multipart/form-data" style="margin-left: 2%; color: white;">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit" class="btn btn-primary">Sign up</button>
+  </form>
+
+
+  {% endblock %}
